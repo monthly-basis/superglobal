@@ -1,5 +1,5 @@
 {
-    "name": "leo-galleguillos/user",
+    "name": "leo-galleguillos/superglobal",
     "license": "MIT",
     "require": {
         "zendframework/zend-test": "^3.1"
