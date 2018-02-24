@@ -8,7 +8,7 @@ class IsMobile
      */
     protected $isMobile;
 
-    public function getIsMobile()
+    public function isMobile()
     {
 		if (isset($this->isMobile)) {
             return $this->isMobile;

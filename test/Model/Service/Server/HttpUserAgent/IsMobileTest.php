@@ -18,4 +18,25 @@ class IsMobileTest extends TestCase
             $this->isMobileService
         );
     }
+
+    public function testIsMobile()
+    {
+        $this->isMobileService = new SuperglobalService\Server\HttpUserAgent\IsMobile();
+        unset($_SERVER['HTTP_USER_AGENT']);
+        $this->assertFalse(
+            $this->isMobileService->isMobile()
+        );
+
+        $this->isMobileService = new SuperglobalService\Server\HttpUserAgent\IsMobile();
+        $_SERVER['HTTP_USER_AGENT'] = 'chrome';
+        $this->assertFalse(
+            $this->isMobileService->isMobile()
+        );
+
+        $this->isMobileService = new SuperglobalService\Server\HttpUserAgent\IsMobile();
+        $_SERVER['HTTP_USER_AGENT'] = 'iphone';
+        $this->assertTrue(
+            $this->isMobileService->isMobile()
+        );
+    }
 }
