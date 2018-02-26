@@ -11,7 +11,7 @@ class Module
         return [
             'view_helpers' => [
                 'aliases' => [
-                    'isMobile' => SuperglobalHelper\Server\HttpUserAgent\IsMobile::class,
+                    'isDeviceMobile' => SuperglobalHelper\Server\HttpUserAgent\IsMobile::class,
                 ],
                 'factories' => [
                     SuperglobalHelper\Server\HttpUserAgent\IsMobile::class => function ($serviceManager) {
