@@ -8,17 +8,27 @@ class IsMobile
      */
     protected $isMobile;
 
-    public function isMobile()
+    /**
+     * Is mobile.
+     *
+     * @return bool
+     */
+    public function isMobile() : bool
     {
 		if (isset($this->isMobile)) {
             return $this->isMobile;
         }
 
-        $this->isMobile = $this->doesUserAgentRepresentMobileDevice();
+        $this->isMobile = $this->doesHttpUserAgentRepresentMobileDevice();
         return $this->isMobile;
     }
 
-    protected function doesUserAgentRepresentMobileDevice()
+    /**
+     * Does HTTP User Agent represent a mobile device.
+     *
+     * @return bool
+     */
+    protected function doesHttpUserAgentRepresentMobileDevice() : bool
     {
         $useragent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 		return (
