@@ -30,6 +30,9 @@ class Module
     {
         return [
             'factories' => [
+                SuperglobalService\Get::class => function ($serviceManager) {
+                    return new SuperglobalService\Get();
+                },
                 SuperglobalService\Server\HttpUserAgent\IsMobile::class => function ($serviceManager) {
                     return new SuperglobalService\Server\HttpUserAgent\IsMobile();
                 },
