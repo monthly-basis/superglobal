@@ -33,6 +33,9 @@ class Module
                 SuperglobalService\Get::class => function ($serviceManager) {
                     return new SuperglobalService\Get();
                 },
+                SuperglobalService\Server\HttpUserAgent\Browser::class => function ($serviceManager) {
+                    return new SuperglobalService\Server\HttpUserAgent\Browser();
+                },
                 SuperglobalService\Server\HttpUserAgent\IsMobile::class => function ($serviceManager) {
                     return new SuperglobalService\Server\HttpUserAgent\IsMobile();
                 },
