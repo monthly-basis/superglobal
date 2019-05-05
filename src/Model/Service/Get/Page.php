@@ -1,11 +1,8 @@
 <?php
-namespace LeoGalleguillos\Superglobal\Model\Service;
+namespace LeoGalleguillos\Superglobal\Model\Service\Get;
 
-class Get
+class Page
 {
-    /**
-     * @deprecated Use Service\Get\Page::getPage() instead
-     */
     public function getPage()
     {
         if (isset($_GET['page'])) {

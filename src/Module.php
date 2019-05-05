@@ -14,9 +14,9 @@ class Module
                     'isDeviceMobile' => SuperglobalHelper\Server\HttpUserAgent\IsMobile::class,
                 ],
                 'factories' => [
-                    SuperglobalHelper\Server\HttpUserAgent\IsMobile::class => function ($serviceManager) {
+                    SuperglobalHelper\Server\HttpUserAgent\IsMobile::class => function ($sm) {
                         return new SuperglobalHelper\Server\HttpUserAgent\IsMobile(
-                            $serviceManager->get(
+                            $sm->get(
                                 SuperglobalService\Server\HttpUserAgent\IsMobile::class
                             )
                         );
@@ -30,13 +30,16 @@ class Module
     {
         return [
             'factories' => [
-                SuperglobalService\Get::class => function ($serviceManager) {
+                SuperglobalService\Get::class => function ($sm) {
                     return new SuperglobalService\Get();
                 },
-                SuperglobalService\Server\HttpUserAgent\Browser::class => function ($serviceManager) {
+                SuperglobalService\Get\Page::class => function ($sm) {
+                    return new SuperglobalService\Get\Page();
+                },
+                SuperglobalService\Server\HttpUserAgent\Browser::class => function ($sm) {
                     return new SuperglobalService\Server\HttpUserAgent\Browser();
                 },
-                SuperglobalService\Server\HttpUserAgent\IsMobile::class => function ($serviceManager) {
+                SuperglobalService\Server\HttpUserAgent\IsMobile::class => function ($sm) {
                     return new SuperglobalService\Server\HttpUserAgent\IsMobile();
                 },
             ],
