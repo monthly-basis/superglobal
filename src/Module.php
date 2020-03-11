@@ -30,6 +30,9 @@ class Module
     {
         return [
             'factories' => [
+                SuperglobalService\Cookie\PhpSessId\IntValue::class => function ($sm) {
+                    return new SuperglobalService\Cookie\PhpSessId\IntValue();
+                },
                 SuperglobalService\Get::class => function ($sm) {
                     return new SuperglobalService\Get();
                 },
