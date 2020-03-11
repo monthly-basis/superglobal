@@ -14,6 +14,11 @@ class Module
                     'isDeviceMobile' => SuperglobalHelper\Server\HttpUserAgent\IsMobile::class,
                 ],
                 'factories' => [
+                    SuperglobalHelper\Cookie\PhpSessId\IntValue::class => function ($sm) {
+                        return new SuperglobalHelper\Cookie\PhpSessId\IntValue(
+                            $sm->get(SuperglobalService\Cookie\PhpSessId\IntValue::class)
+                        );
+                    },
                     SuperglobalHelper\Server\HttpUserAgent\IsMobile::class => function ($sm) {
                         return new SuperglobalHelper\Server\HttpUserAgent\IsMobile(
                             $sm->get(
