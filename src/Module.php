@@ -11,7 +11,8 @@ class Module
         return [
             'view_helpers' => [
                 'aliases' => [
-                    'isDeviceMobile' => SuperglobalHelper\Server\HttpUserAgent\IsMobile::class,
+                    'getPhpSessIdIntValue' => SuperglobalHelper\Cookie\PhpSessId\IntValue::class,
+                    'isDeviceMobile'       => SuperglobalHelper\Server\HttpUserAgent\IsMobile::class,
                 ],
                 'factories' => [
                     SuperglobalHelper\Cookie\PhpSessId\IntValue::class => function ($sm) {
