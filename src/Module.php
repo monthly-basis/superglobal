@@ -11,15 +11,9 @@ class Module
         return [
             'view_helpers' => [
                 'aliases' => [
-                    'getPhpSessIdIntValue' => SuperglobalHelper\Cookie\PhpSessId\IntValue::class,
                     'isDeviceMobile'       => SuperglobalHelper\Server\HttpUserAgent\IsMobile::class,
                 ],
                 'factories' => [
-                    SuperglobalHelper\Cookie\PhpSessId\IntValue::class => function ($sm) {
-                        return new SuperglobalHelper\Cookie\PhpSessId\IntValue(
-                            $sm->get(SuperglobalService\Cookie\PhpSessId\IntValue::class)
-                        );
-                    },
                     SuperglobalHelper\Server\HttpUserAgent\IsMobile::class => function ($sm) {
                         return new SuperglobalHelper\Server\HttpUserAgent\IsMobile(
                             $sm->get(
@@ -36,9 +30,6 @@ class Module
     {
         return [
             'factories' => [
-                SuperglobalService\Cookie\PhpSessId\IntValue::class => function ($sm) {
-                    return new SuperglobalService\Cookie\PhpSessId\IntValue();
-                },
                 SuperglobalService\Get::class => function ($sm) {
                     return new SuperglobalService\Get();
                 },
