@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class BrowserTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->browserService = new SuperglobalService\Server\HttpUserAgent\Browser();
     }

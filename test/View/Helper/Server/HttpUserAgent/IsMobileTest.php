@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class IsMobileTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->isMobileServiceMock = $this->createMock(
             SuperglobalService\Server\HttpUserAgent\IsMobile::class
