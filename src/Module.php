@@ -36,6 +36,9 @@ class Module
                 SuperglobalService\Get\Page::class => function ($sm) {
                     return new SuperglobalService\Get\Page();
                 },
+                SuperglobalService\Server\HttpUserAgent\Bot::class => function ($sm) {
+                    return new SuperglobalService\Server\HttpUserAgent\Bot();
+                },
                 SuperglobalService\Server\HttpUserAgent\Browser::class => function ($sm) {
                     return new SuperglobalService\Server\HttpUserAgent\Browser();
                 },
