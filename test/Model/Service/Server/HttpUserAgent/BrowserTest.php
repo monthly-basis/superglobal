@@ -11,16 +11,10 @@ class BrowserTest extends TestCase
         $this->browserService = new SuperglobalService\Server\HttpUserAgent\Browser();
     }
 
-    public function testInitialize()
-    {
-        $this->assertInstanceOf(
-            SuperglobalService\Server\HttpUserAgent\Browser::class,
-            $this->browserService
-        );
-    }
-
     public function testIsBrowser()
     {
+        $this->expectError();
+
         unset($_SERVER['HTTP_USER_AGENT']);
 
         $this->assertFalse(
