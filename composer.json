@@ -2,7 +2,8 @@
     "name": "leo-galleguillos/superglobal",
     "license": "MIT",
     "require": {
-        "laminas/laminas-test": "^3.1"
+        "laminas/laminas-test": "^3.1",
+        "leo-galleguillos/test": "^1.0"
     },
     "autoload": {
         "psr-4": {
