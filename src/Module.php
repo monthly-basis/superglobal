@@ -39,6 +39,9 @@ class Module
                 SuperglobalService\Server\HttpUserAgent\Bot::class => function ($sm) {
                     return new SuperglobalService\Server\HttpUserAgent\Bot();
                 },
+                /*
+                 * @deprecated Use SuperglobalService\Server\HttpUserAgent\Bot
+                 */
                 SuperglobalService\Server\HttpUserAgent\Browser::class => function ($sm) {
                     return new SuperglobalService\Server\HttpUserAgent\Browser();
                 },
