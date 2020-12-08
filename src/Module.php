@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\Superglobal;
+namespace MonthlyBasis\Superglobal;
 
-use LeoGalleguillos\Superglobal\Model\Service as SuperglobalService;
-use LeoGalleguillos\Superglobal\View\Helper as SuperglobalHelper;
+use MonthlyBasis\Superglobal\Model\Service as SuperglobalService;
+use MonthlyBasis\Superglobal\View\Helper as SuperglobalHelper;
 
 class Module
 {

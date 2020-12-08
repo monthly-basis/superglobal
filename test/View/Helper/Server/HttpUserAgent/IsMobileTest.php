@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\SuperglobalTest\View\Helper\Server\HttpUserAgent;
+namespace MonthlyBasis\SuperglobalTest\View\Helper\Server\HttpUserAgent;
 
-use LeoGalleguillos\Superglobal\Model\Service as SuperglobalService;
-use LeoGalleguillos\Superglobal\View\Helper as SuperglobalHelper;
+use MonthlyBasis\Superglobal\Model\Service as SuperglobalService;
+use MonthlyBasis\Superglobal\View\Helper as SuperglobalHelper;
 use PHPUnit\Framework\TestCase;
 
 class IsMobileTest extends TestCase

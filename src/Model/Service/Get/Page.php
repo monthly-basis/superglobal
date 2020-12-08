@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\Superglobal\Model\Service\Get;
+namespace MonthlyBasis\Superglobal\Model\Service\Get;
 
 class Page
 {

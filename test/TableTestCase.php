@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\SuperglobalTest;
+namespace MonthlyBasis\SuperglobalTest;
 
 use Zend\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;

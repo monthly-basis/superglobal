@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\Superglobal\View\Helper\Server\HttpUserAgent;
+namespace MonthlyBasis\Superglobal\View\Helper\Server\HttpUserAgent;
 
-use LeoGalleguillos\Superglobal\Model\Service as SuperglobalService;
+use MonthlyBasis\Superglobal\Model\Service as SuperglobalService;
 use Zend\View\Helper\AbstractHelper;
 
 class IsMobile extends AbstractHelper

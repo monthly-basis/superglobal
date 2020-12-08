@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\SuperglobalTest\Model\Service\Server\HttpUserAgent;
+namespace MonthlyBasis\SuperglobalTest\Model\Service\Server\HttpUserAgent;
 
-use LeoGalleguillos\Superglobal\Model\Service as SuperglobalService;
+use MonthlyBasis\Superglobal\Model\Service as SuperglobalService;
 use PHPUnit\Framework\TestCase;
 
 class BrowserTest extends TestCase

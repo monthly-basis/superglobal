@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\Superglobal\Model\Service;
+namespace MonthlyBasis\Superglobal\Model\Service;
 
 class Get
 {

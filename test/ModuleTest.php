@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\SuperglobalTest;
+namespace MonthlyBasis\SuperglobalTest;
 
-use LeoGalleguillos\Superglobal\Module;
+use MonthlyBasis\Superglobal\Module;
 use MonthlyBasis\LaminasTest\ModuleTestCase;
 
 class ModuleTest extends ModuleTestCase

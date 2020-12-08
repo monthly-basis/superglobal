@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\Superglobal\Model\Service\Server\HttpUserAgent;
+namespace MonthlyBasis\Superglobal\Model\Service\Server\HttpUserAgent;
 
 class Browser
 {
