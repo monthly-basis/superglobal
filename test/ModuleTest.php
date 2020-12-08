@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\SuperglobalTest;
 
 use LeoGalleguillos\Superglobal\Module;
-use LeoGalleguillos\Test\ModuleTestCase;
+use MonthlyBasis\LaminasTest\ModuleTestCase;
 
 class ModuleTest extends ModuleTestCase
 {
