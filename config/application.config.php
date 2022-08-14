@@ -2,8 +2,8 @@
 
 return [
     'modules' => [
+        'Laminas\Router',
         'MonthlyBasis\Superglobal',
-        'Zend\Router',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => array(

@@ -2,7 +2,7 @@
 namespace MonthlyBasis\Superglobal\View\Helper\Server\HttpUserAgent;
 
 use MonthlyBasis\Superglobal\Model\Service as SuperglobalService;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 class IsMobile extends AbstractHelper
 {
